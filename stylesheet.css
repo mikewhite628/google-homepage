@@ -1,0 +1,43 @@
+.wrap {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-columns: 30vw auto 30vw;
+}
+
+
+.logobox {
+   place-self: center;
+   grid-column: 2/3; 
+   grid-row: 2/3;
+}
+
+.search {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.searchbar:focus{
+    outline: none;
+}
+.searchbar:hover {
+    box-shadow: 4px 4px 17px lightgrey;
+}
+
+.searchbar {
+    width: 450px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+}
+
+.inputs {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-items: end;
+}
+
+
